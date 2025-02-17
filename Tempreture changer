@@ -1,0 +1,14 @@
+print("Aria Laurenson - Temp Changer")
+
+#welcome the user to the app
+print ("Hello! Welcome to the temperature conversion app!")
+
+
+#ask number of temp in C°
+c = input("Enter tempreture in C°: ")
+
+#calculate degrees in f°
+f = int(c) * 9/5 + 32
+
+#display the final temps
+print("The tempreture is currently",c,"°C, or",f,"°F")
