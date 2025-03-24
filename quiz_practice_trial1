@@ -1,0 +1,47 @@
+""" 
+My Quiz
+By Aria Laurenson
+11DGT
+Fri 14/03/2025
+
+
+Variables"""
+questions = ["Hello", "Goodbye", "How are you", "Good night", "Good afternoon"]
+answers = ["hola", "Adios", "como estas", "buenas noches", "buenas tardes"]
+prompt = "What is spanish for..."
+score = 0
+chances = 3
+
+#store name, and welcome them
+user_name = input("What is your name: ")
+print("Hello", user_name)
+start_game = input("Would you like to play a game (y/n)")
+start_game = start_game.lower()
+start_game = start_game[0]
+
+if start_game == "y":
+  print("Let's begin...")
+  
+elif start_game == "n":
+  print("Byee!")
+  quit()
+  
+else:
+  print("Please give a yes or no answer")
+
+#Question 1
+user_answer = input(prompt + questions[0])
+print("you answered", user_answer)
+
+#If question is correct or not - using if statments
+user_answer = user_answer.lower()
+if user_answer == answers[0]:
+  print("Great job, Buen trabajo!")
+  score += 1
+  print("Your score is now:", score)
+  
+else:
+  print("That's not quite right...")
+  #minus a chance from the total (3)
+  chances -= 1
+  print("You have ", str(chances), "chances left")
