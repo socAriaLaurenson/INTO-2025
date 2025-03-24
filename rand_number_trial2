@@ -1,0 +1,21 @@
+#Set up veriables first_no and second_no
+first_no = 0
+second_no = 0
+
+#Ask user to enter values of first_no and second_no
+first_no = int(input("Enter first number: "))
+second_no = int(input("Enter second number: "))
+
+#Give feedback
+print("You entered 1st: ", first_no, "and 2nd", second_no)
+
+#Calculate wich number is bigger, or if they are equal
+if first_no > second_no:
+  print("Wow! the biggest number is", first_no)
+  
+elif second_no > first_no:
+  print("Wow! the biggest number is", second_no)
+  
+elif second_no == first_no:
+  print("These numbers are both equal!", first_no, "=", second_no)
+  
