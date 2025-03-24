@@ -1,0 +1,29 @@
+#Ask the viewer for a grade
+grade = int(input("Enter a grade: "))
+print("You entered", grade) 
+ 
+#If grade is greater than or equal to 90: Print “A”
+if grade >= 90:
+  print("A")
+  
+#Else if grade is greater than or equal to 80: Print “B"
+elif grade >= 80:
+  print("B")
+  
+#Else if grade is greater than or equal to 70: Print “C”
+elif grade >= 70:
+  print("C")
+
+#Else if grade is greater than or equal to 60: Print “D”
+elif grade >= 60:
+  print("D")
+  
+#Else if grade is greater than or equal to 50: Print “E”
+elif grade >= 50:
+  print("E")
+  
+#else print F
+else:
+  print("F")
+
+  
