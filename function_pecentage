@@ -1,0 +1,17 @@
+"""
+calculating a percentage score
+
+
+
+
+
+#setup of function
+def multiply (x, y):
+  print(x/y * 100)
+
+
+#ask user for the two numbers
+x = int(input("Enter a number 1-20: "))
+y = int(input("Enter a number 1-20: "))
+
+multiply (x,y)
