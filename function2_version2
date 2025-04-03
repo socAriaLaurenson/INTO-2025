@@ -1,0 +1,30 @@
+####################################
+#setup of function
+def calc_percentage (a, b):
+  result = a/b * 100
+  return result
+
+percentage = 0
+####################################
+
+#ask user for the two numbers, put this in loop 
+asking = False
+while asking == False:
+  try:
+    score = int(input("Enter score: "))
+    number_questions = int(input("Enter the number of questions: "))
+    
+    if score < number_questions:
+      percentage = calc_percentage(score, number_questions)
+      asking = True
+      
+    else:
+      print("Input error, your score cannot be higher than the number of questions")
+  
+  except ValueError:
+    print("Invalid input. Please enter a number")
+    
+  except ZeroDivisionError:
+    print("Input error, you cannot divid a number by zero")
+    
+print("The players percentage is", percentage, "%")
